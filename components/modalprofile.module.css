@@ -94,7 +94,7 @@
   gap: var(--gap-13xl);
 }
 .modalprofile {
-  width: 393px;
+  /* width: 393px; */
   position: relative;
   border-radius: var(--br-9xs) var(--br-9xs) 0 0;
   line-height: normal;

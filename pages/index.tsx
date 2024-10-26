@@ -5,6 +5,7 @@ import styles from "./welcome.module.css";
 import { useChain } from "@cosmos-kit/react";
 import { WalletStatus } from "cosmos-kit";
 import { useRouter } from "next/router";
+import { affiliate, isAffiliated } from "@/utils/cosmwasm";
 
 export type LandingSymbiosisType = {
   className?: string;
@@ -14,21 +15,40 @@ const LandingSymbiosis: NextPage<LandingSymbiosisType> = ({
   className = "",
 }) => {
   const {
-    // chain,
     status,
-    // wallet,
-    // username,
-    // address,
-    // message,
-    // connect,
+    address,
     openView,
+    getSigningCosmWasmClient
   } = useChain('osmosis');
   const router = useRouter();
 
-  if (status === WalletStatus.Connected) {
-    // redirect to home
-    router.push("/home");
+  if (status === WalletStatus.Connected && address) {
+    isAffiliated(address).then((affiliated) => {
+      if (affiliated) {
+        // redirect to home
+        router.push("/home");
+      }});
   }
+
+  const clickHandler = async () => {
+    if (status === WalletStatus.Disconnected) {
+      openView();
+      return;
+    }
+    if (status === WalletStatus.Connected && address) {
+      const affiliated = await isAffiliated(address)
+      if (affiliated) {
+        // redirect to home
+        router.push("/home");
+      } else {
+        const signingClient = await getSigningCosmWasmClient();
+        const refferer = window.location.search.substring(1).split("&").find((param) => param.startsWith("code"))?.split("=")[1];
+        // @ts-ignore
+        await affiliate(signingClient, address, refferer)
+        router.push("/home");
+      }
+    }
+  };
 
   return (
     <div className={[styles.iphone1415Pro7, className].join(" ")}>
@@ -49,7 +69,7 @@ const LandingSymbiosis: NextPage<LandingSymbiosisType> = ({
             </div>
             <Button
               className={styles.btntext}
-              onClick={openView}
+              onClick={clickHandler}
               variant="contained"
               sx={{
                 textTransform: "none",

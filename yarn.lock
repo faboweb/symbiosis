@@ -461,6 +461,13 @@
   resolved "https://registry.npmjs.org/@cosmjs/utils/-/utils-0.32.4.tgz"
   integrity sha512-D1Yc+Zy8oL/hkUkFUL/bwxvuDBzRGpc4cF7/SkdhxX4iHpSLgdOuTt1mhCh9+kl6NQREy9t7SYZ6xeW5gFe60w==
 
+"@cosmology/lcd@^0.14.0":
+  version "0.14.0"
+  resolved "https://registry.npmjs.org/@cosmology/lcd/-/lcd-0.14.0.tgz"
+  integrity sha512-qy/q56NWpoQfyUX3nl80YjxKMf70QKKQ1Rh9EqJO9OMysj48UeLPcxEWwv0jfOBzPsCX/Jj8Ha6Sb1McFVSk9g==
+  dependencies:
+    axios "1.7.4"
+
 "@cosmos-kit/cdcwallet-extension@^2.15.1":
   version "2.15.1"
   resolved "https://registry.npmjs.org/@cosmos-kit/cdcwallet-extension/-/cdcwallet-extension-2.15.1.tgz"
@@ -1945,15 +1952,10 @@
   dependencies:
     glob "7.1.7"
 
-"@next/swc-linux-x64-gnu@13.5.7":
+"@next/swc-darwin-arm64@13.5.7":
   version "13.5.7"
-  resolved "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-13.5.7.tgz"
-  integrity sha512-UdHm7AlxIbdRdMsK32cH0EOX4OmzAZ4Xm+UVlS0YdvwLkI3pb7AoBEoVMG5H0Wj6Wpz6GNkrFguHTRLymTy6kw==
-
-"@next/swc-linux-x64-musl@13.5.7":
-  version "13.5.7"
-  resolved "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-13.5.7.tgz"
-  integrity sha512-c50Y8xBKU16ZGj038H6C13iedRglxvdQHD/1BOtes56gwUrIRDX2Nkzn3mYtpz3Wzax0gfAF9C0Nqljt93IxvA==
+  resolved "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-13.5.7.tgz"
+  integrity sha512-7SxmxMex45FvKtRoP18eftrDCMyL6WQVYJSEE/s7A1AW/fCkznxjEShKet2iVVzf89gWp8HbXGaL4hCaseux6g==
 
 "@noble/curves@~1.3.0":
   version "1.3.0"
@@ -2010,15 +2012,10 @@
   resolved "https://registry.npmjs.org/@nolyfill/is-core-module/-/is-core-module-1.0.39.tgz"
   integrity sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==
 
-"@parcel/watcher-linux-x64-glibc@2.4.1":
+"@parcel/watcher-darwin-arm64@2.4.1":
   version "2.4.1"
-  resolved "https://registry.npmjs.org/@parcel/watcher-linux-x64-glibc/-/watcher-linux-x64-glibc-2.4.1.tgz"
-  integrity sha512-s9O3fByZ/2pyYDPoLM6zt92yu6P4E39a03zvO0qCHOTjxmt3GHRMLuRZEWhWLASTMSrrnVNWdVI/+pUElJBBBg==
-
-"@parcel/watcher-linux-x64-musl@2.4.1":
-  version "2.4.1"
-  resolved "https://registry.npmjs.org/@parcel/watcher-linux-x64-musl/-/watcher-linux-x64-musl-2.4.1.tgz"
-  integrity sha512-L2nZTYR1myLNST0O632g0Dx9LyMNHrn6TOt76sYxWLdff3cB22/GZX2UPtJnaqQPdCRoszoY5rcOj4oMTtp5fQ==
+  resolved "https://registry.npmjs.org/@parcel/watcher-darwin-arm64/-/watcher-darwin-arm64-2.4.1.tgz"
+  integrity sha512-ln41eihm5YXIY043vBrrHfn94SIBlqOWmoROhsMVTSXGh0QahKGy77tfEywQ7v3NywyxBBkGIfrWRHm0hsKtzA==
 
 "@parcel/watcher-wasm@^2.4.1":
   version "2.4.1"
@@ -2109,6 +2106,61 @@
   version "1.1.0"
   resolved "https://registry.npmjs.org/@protobufjs/utf8/-/utf8-1.1.0.tgz"
   integrity sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==
+
+"@protobufs/amino@^0.0.11":
+  version "0.0.11"
+  resolved "https://registry.npmjs.org/@protobufs/amino/-/amino-0.0.11.tgz"
+  integrity sha512-JRIkW6/YGIUfbdDuASt3wsuxzC0Xj3U2sV0Arqa9iNwCvv4HtOpbqdWVVVgvQBnR0/ZkwQeXnt+GH7yT/DvsYQ==
+  dependencies:
+    "@protobufs/google" "^0.0.10"
+
+"@protobufs/cosmos_proto@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmjs.org/@protobufs/cosmos_proto/-/cosmos_proto-0.0.10.tgz"
+  integrity sha512-4nMopXxN23udy1HEe+vS49zD9dxrA7i0E3n15QUz1x0tbrowYLHzJKeyCUNlsh5PKpEIXGxHXpPZWXs7vVCwUw==
+  dependencies:
+    "@protobufs/google" "^0.0.10"
+
+"@protobufs/cosmos@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.npmjs.org/@protobufs/cosmos/-/cosmos-0.1.0.tgz"
+  integrity sha512-L3NZ+z0kI6GMTiD2HASNe3WbopPhQlaQaKZNRue+8LiGEv/vbbxD1lox8cwOqes3AN5dHiT0i3+gvzIbKBb7gw==
+  dependencies:
+    "@protobufs/amino" "^0.0.11"
+    "@protobufs/cosmos_proto" "^0.0.10"
+    "@protobufs/gogoproto" "^0.0.10"
+    "@protobufs/google" "^0.0.10"
+    "@protobufs/tendermint" "^0.0.10"
+
+"@protobufs/gogoproto@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmjs.org/@protobufs/gogoproto/-/gogoproto-0.0.10.tgz"
+  integrity sha512-u3eK1aSO3KOuX4RVFpqKPTaT/WLV50GFLuIC3slVGfD7Z1CfZ5ivHbFYUib96gihu1Mq2OZpNVj3dNws9YsVoQ==
+  dependencies:
+    "@protobufs/google" "^0.0.10"
+
+"@protobufs/google@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmjs.org/@protobufs/google/-/google-0.0.10.tgz"
+  integrity sha512-3yo+liabFM1519smwwfzh1C535CntXVsS7zT98xmo21tZUX7vxeFpQDMx38EzMGYSy/Reo8wEMWJUHqZzYsCUw==
+
+"@protobufs/osmosis@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.npmjs.org/@protobufs/osmosis/-/osmosis-0.4.0.tgz"
+  integrity sha512-1LiJBva5X2mnchZfHxCY92CkDom4R2xx1o8BzF6HHHrXwhdTof6G6juYVgzlesfTT4p4HiwAhMGnDs3zF/YWTA==
+  dependencies:
+    "@protobufs/amino" "^0.0.11"
+    "@protobufs/cosmos" "^0.1.0"
+    "@protobufs/gogoproto" "^0.0.10"
+    "@protobufs/google" "^0.0.10"
+
+"@protobufs/tendermint@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmjs.org/@protobufs/tendermint/-/tendermint-0.0.10.tgz"
+  integrity sha512-hAAMLFhKdAovslKeWnLTp2gGn5bxSTDVcQLKs4C4cC91R/KfHOh+Klt4PqSGUv/APINAmREzsX2LDUbIQ2dCpg==
+  dependencies:
+    "@protobufs/gogoproto" "^0.0.10"
+    "@protobufs/google" "^0.0.10"
 
 "@react-aria/breadcrumbs@^3.5.18":
   version "3.5.18"
@@ -4050,6 +4102,15 @@ axios@^1.6.0:
     form-data "^4.0.0"
     proxy-from-env "^1.1.0"
 
+axios@1.7.4:
+  version "1.7.4"
+  resolved "https://registry.npmjs.org/axios/-/axios-1.7.4.tgz"
+  integrity sha512-DukmaFRnY6AzAALSH4J2M3k6PkaC+MfaAGdEERRWcC9q3/TWQwLpHR8ZRLKTdQ3aBDL64EdluRDjJqKw+BPZEw==
+  dependencies:
+    follow-redirects "^1.15.6"
+    form-data "^4.0.0"
+    proxy-from-env "^1.1.0"
+
 axobject-query@^4.1.0:
   version "4.1.0"
   resolved "https://registry.npmjs.org/axobject-query/-/axobject-query-4.1.0.tgz"
@@ -5428,6 +5489,11 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   integrity sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
+
+fsevents@~2.3.2:
+  version "2.3.3"
+  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz"
+  integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
 
 function-bind@^1.1.2:
   version "1.1.2"

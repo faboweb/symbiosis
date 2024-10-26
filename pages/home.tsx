@@ -11,6 +11,7 @@ import { QRCodeSVG } from 'qrcode.react';
 import crypto from 'crypto';
 import { WalletStatus } from "cosmos-kit";
 import { useRouter } from "next/router";
+import { isAffiliated } from "@/utils/cosmwasm";
 
 
 const Home: NextPage = () => {
@@ -24,6 +25,14 @@ const Home: NextPage = () => {
   if (status === WalletStatus.Disconnected) {
     router.push("/");
     return
+  }
+
+  if (status === WalletStatus.Connected && address) {
+    isAffiliated(address).then((affiliated) => {
+      if (!affiliated) {
+        // redirect to home
+        router.push("/");
+      }});
   }
 
   // we shorten the address to 8 chars to not be too obvious

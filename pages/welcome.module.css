@@ -98,7 +98,7 @@
   font-family: var(--font-poppins);
 }
 .iphone1415Pro7 {
-  width: 393px;
+  /* width: 393px; */
   max-width: 100%;
   overflow: hidden;
   padding: var(--padding-29xl) 0 0;

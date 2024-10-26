@@ -17,6 +17,7 @@
   "dependencies": {
     "@cosmjs/cosmwasm-stargate": "0.31.3",
     "@cosmjs/stargate": "0.32.3",
+    "@cosmology/lcd": "^0.14.0",
     "@cosmos-kit/coin98-extension": "^2.14.1",
     "@cosmos-kit/compass-extension": "^2.13.1",
     "@cosmos-kit/cosmostation-extension": "^2.15.0",
@@ -39,6 +40,7 @@
     "react-icons": "4.6.0"
   },
   "devDependencies": {
+    "@protobufs/osmosis": "^0.4.0",
     "@types/node": "18.19.37",
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.0",

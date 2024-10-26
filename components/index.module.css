@@ -25,7 +25,7 @@
   font-family: var(--font-poppins);
 }
 .topSpacer {
-  width: 393px;
+  /* width: 393px; */
   height: 48px;
   position: absolute;
   margin: 0 !important;
@@ -35,7 +35,7 @@
   flex-shrink: 0;
 }
 .notificationcenter {
-  width: 393px;
+  /* width: 393px; */
   background-color: var(--purple-1000);
   max-width: 100%;
   overflow: hidden;
