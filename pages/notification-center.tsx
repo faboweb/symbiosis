@@ -27,18 +27,18 @@ const NotificationCenter: NextPage<NotificationCenterType> = ({
 
     return (
         <>
-            <div className={[styles.notificationcenter, className].join(" ")}>
-                <Menu
-                    menuWidth="100vw"
-                    menuGap="unset"
-                    logoSymbiosis1IconMinHeight="unset"
-                    sYMBIOSISDisplay="unset"
-                    sYMBIOSISMinWidth="unset"
-                    buttonBellBorder="unset"
-                    buttonBellBackgroundColor="unset"
-                    buttonHomeBorder="unset"
-                    buttonHomeBackgroundColor="unset"
-                />
+            <Menu
+                menuWidth="100vw"
+                menuGap="unset"
+                logoSymbiosis1IconMinHeight="unset"
+                sYMBIOSISDisplay="unset"
+                sYMBIOSISMinWidth="unset"
+                buttonBellBorder="unset"
+                buttonBellBackgroundColor="unset"
+                buttonHomeBorder="unset"
+                buttonHomeBackgroundColor="unset"
+            />
+            <div className={[styles.notificationcenter, className].join(" ")} style={{ paddingTop: '55px' }}>
                 <section className={styles.notifications}>
                     <h1 className={styles.notificationCenter}>Notification Center</h1>
                     <div className={styles.userActivity}>
