@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import { useCallback } from "react";
 import { useRouter } from "next/router";
 import styles from "./content.module.css";
+import { useChain } from "@cosmos-kit/react";
 
 export type ContentType = {
   className?: string;
@@ -9,6 +10,17 @@ export type ContentType = {
 
 const Content: NextPage<ContentType> = ({ className = "" }) => {
   const router = useRouter();
+
+  const {
+    // chain,
+    status,
+    // wallet,
+    // username,
+    // address,
+    // message,
+    // connect,
+    openView,
+  } = useChain('osmosis');
 
   const onSubContentContainerClick = useCallback(() => {
     router.push("/home");
@@ -28,7 +40,7 @@ const Content: NextPage<ContentType> = ({ className = "" }) => {
         </div>
       </div>
       <div className={styles.btntext}>
-        <a className={styles.refer}>Refer</a>
+        <b className={styles.refer} onClick={openView}>Refer</b>
       </div>
     </div>
   );
