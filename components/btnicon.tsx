@@ -22,14 +22,14 @@ const Btnicon: NextPage<BtniconType> = ({
   }, [contentCopyIconOverflow]);
 
   return (
-    <div className={[styles.buttoncopy, className].join(" ")}>
+    <button className={[styles.buttoncopy, className].join(" ")}>
       <img
         className={styles.contentCopyIcon}
         alt=""
         src={contentCopy}
         style={contentCopyIconStyle}
       />
-    </div>
+    </button>
   );
 };
 

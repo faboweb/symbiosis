@@ -33,6 +33,7 @@
     "cosmos-kit": "^2.21.1",
     "framer-motion": "9.0.7",
     "next": "^13",
+    "qrcode.react": "^4.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "4.6.0"

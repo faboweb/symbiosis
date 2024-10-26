@@ -129,7 +129,7 @@ const Menu: NextPage<MenuType> = ({
       </header>
       {isModalfooterOpen && (
         <PortalPopup
-          overlayColor="rgba(113, 113, 113, 0.3)"
+          overlayColor="rgba(113, 113, 113, 0.5)"
           placement="Centered"
           onOutsideClick={closeModalfooter}
         >

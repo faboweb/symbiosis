@@ -3,6 +3,7 @@ import { useCallback } from "react";
 import { useRouter } from "next/router";
 import Btnmenu from "./btnmenu";
 import styles from "./modalfooter.module.css";
+import { useChain } from "@cosmos-kit/react";
 
 export type ModalfooterType = {
   className?: string;
@@ -13,7 +14,17 @@ const Modalfooter: NextPage<ModalfooterType> = ({
   className = "",
   onClose,
 }) => {
+  const {
+    status,
+    disconnect
+  } = useChain('osmosis');
   const router = useRouter();
+
+  const _disconnect = useCallback(() => {
+    disconnect();
+
+    router.push("/");
+  }, [])
 
   const onButtonHomeContainerClick = useCallback(() => {
     router.push("/home");
@@ -83,7 +94,7 @@ const Modalfooter: NextPage<ModalfooterType> = ({
             </div>
           </div>
         </div>
-        <button className={styles.buttonlogout}>
+        <button className={styles.buttonlogout} onClick={_disconnect}>
           <img className={styles.doorOpenIcon} alt="" src="/door-open.svg" />
           <a className={styles.logOut}>Log Out</a>
         </button>

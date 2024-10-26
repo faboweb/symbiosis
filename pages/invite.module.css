@@ -80,7 +80,7 @@
   font-size: var(--font-size-xl);
 }
 .invited {
-  width: 393px;
+  /* width: 393px; */
   max-width: 100%;
   overflow: hidden;
   flex-direction: column;

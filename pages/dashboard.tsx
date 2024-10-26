@@ -23,7 +23,7 @@ const Dashboard: NextPage = () => {
       <div className={styles.dashboard}>
         <div className={styles.topSpacer} />
         <Menu
-          menuWidth="393px"
+          // menuWidth="393px"
           menuGap="unset"
           logoSymbiosis1IconMinHeight="unset"
           sYMBIOSISDisplay="unset"

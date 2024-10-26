@@ -23,7 +23,7 @@ const MyEarnings: NextPage = () => {
       <div className={styles.myearnings}>
         <div className={styles.topSpacer} />
         <Menu
-          menuWidth="393px"
+          // menuWidth="393px"
           menuGap="unset"
           logoSymbiosis1IconMinHeight="unset"
           sYMBIOSISDisplay="unset"
