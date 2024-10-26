@@ -85,3 +85,10 @@ body {
   --blur: blur(30px);
   --shade-standard: 0px 10px 20px rgba(0, 0, 0, 0.5);
 }
+
+button {
+  border: none;
+}
+button:hover {
+  filter: hue-rotate(20deg); /* Rotate hue by 90 degrees */
+}
