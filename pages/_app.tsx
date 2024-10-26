@@ -1,4 +1,4 @@
-import "../styles/globals.css";
+import "../styles/global.css";
 import "@interchain-ui/react/styles";
 
 import type { AppProps } from "next/app";
@@ -66,18 +66,18 @@ function CreateCosmosApp({ Component, pageProps }: AppProps) {
           {/* TODO fix type error */}
           {/* @ts-ignore */}
           <Fragment>
-              <Head>
-                <title>Symbiosis</title>
-                <meta
-                  name="viewport"
-                  content="minimum-scale=1, initial-scale=1, width=device-width"
-                />
-              </Head>
-              <ThemeProvider theme={muiTheme}>
-                {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-                <CssBaseline />
-                <Component {...pageProps} />
-              </ThemeProvider>
+            <Head>
+              <title>Symbiosis</title>
+              <meta
+                name="viewport"
+                content="minimum-scale=1, initial-scale=1, width=device-width"
+              />
+            </Head>
+            <ThemeProvider theme={muiTheme}>
+              {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+              <CssBaseline />
+              <Component {...pageProps} />
+            </ThemeProvider>
           </Fragment>
         </Box>
       </ChainProvider>

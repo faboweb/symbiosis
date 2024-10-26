@@ -78,11 +78,11 @@ const Menu: NextPage<MenuType> = ({
   }, []);
 
   const onLogoContainerClick = useCallback(() => {
-    router.push("/");
+    router.push("/home");
   }, [router]);
 
   const onButtonBellClick = useCallback(() => {
-    router.push("/notification-center");
+    router.push("/");
   }, [router]);
 
   return (

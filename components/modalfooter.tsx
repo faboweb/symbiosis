@@ -16,7 +16,7 @@ const Modalfooter: NextPage<ModalfooterType> = ({
   const router = useRouter();
 
   const onButtonHomeContainerClick = useCallback(() => {
-    router.push("/");
+    router.push("/home");
   }, [router]);
 
   const onButtonEarningsContainerClick = useCallback(() => {
@@ -69,7 +69,7 @@ const Modalfooter: NextPage<ModalfooterType> = ({
             </div>
             <div className={styles.tradeHeadingParent}>
               <div className={styles.tradeHeading} />
-              <a href="https://app.osmosis.zone"><h3 className={styles.tradeYourEarnings}>Trade your earnings!</h3></a>
+              <h3 className={styles.tradeYourEarnings}>Trade your earnings!</h3>
               <div className={styles.tradeOptions}>
                 <button className={styles.buttonosmosis}>
                   <img

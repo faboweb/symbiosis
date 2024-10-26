@@ -39,7 +39,7 @@ const Btnmenu: NextPage<BtnmenuType> = ({
   const router = useRouter();
 
   const onButtonHomeContainerClick1 = useCallback(() => {
-    router.push("/");
+    router.push("/home");
   }, [router]);
 
   return (

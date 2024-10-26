@@ -6,6 +6,7 @@
   flex-shrink: 0;
   min-height: 32px;
 }
+
 .symbiosis {
   text-decoration: none;
   position: relative;
@@ -14,6 +15,7 @@
   display: inline-block;
   min-width: 110px;
 }
+
 .logo {
   display: flex;
   flex-direction: row;
@@ -22,11 +24,13 @@
   gap: var(--gap-9xs);
   cursor: pointer;
 }
+
 .notificationsIcon {
   height: 24px;
   width: 24px;
   position: relative;
 }
+
 .buttonbell,
 .menu,
 .navigation {
@@ -34,6 +38,7 @@
   flex-direction: row;
   align-items: center;
 }
+
 .buttonbell {
   cursor: pointer;
   border: 0;
@@ -41,13 +46,15 @@
   background-color: transparent;
   justify-content: center;
 }
+
 .menu,
 .navigation {
   justify-content: flex-start;
   gap: var(--gap-5xs);
 }
+
 .menu {
-  width: 366px;
+  width: 100vw;
   background-color: var(--purple-1000);
   max-width: 100%;
   justify-content: space-between;

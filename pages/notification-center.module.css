@@ -1,0 +1,55 @@
+.notificationCenter {
+    margin: 0;
+    align-self: stretch;
+    position: relative;
+    font-size: inherit;
+    font-weight: 700;
+    font-family: inherit;
+    height: max-content;
+}
+
+.notifications,
+.userActivity {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+    height: 100vh;
+}
+
+.notifications {
+    align-items: center;
+    padding: var(--padding-5xl);
+    gap: var(--gap-xl);
+    text-align: center;
+    font-size: var(--font-size-13xl);
+    color: var(--white);
+    font-family: var(--font-poppins);
+}
+
+.topSpacer {
+    width: 100vw;
+    height: 408px;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    right: -2px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.notificationcenter {
+    width: 100%;
+    height: 100%;
+    background-color: var(--purple-1000);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    position: relative;
+    letter-spacing: normal;
+}

@@ -1,0 +1,102 @@
+.tokenicon {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.tokeniconWrapper {
+  border-radius: var(--br-81xl);
+  background-color: var(--purple-1000);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-9xs);
+}
+.date,
+.receivedFees {
+  position: relative;
+}
+.date {
+  font-size: var(--font-size-xs);
+  font-weight: 200;
+  color: var(--purple-100);
+  display: inline-block;
+  min-width: 30px;
+}
+.receivedFeesParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.ticker {
+  position: relative;
+  display: inline-block;
+  min-width: 25px;
+}
+.rewardDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+.placeholder {
+  position: relative;
+  display: inline-block;
+  min-width: 9px;
+}
+.dollarValue {
+  border-radius: var(--br-81xl);
+  background-color: var(--green-600);
+  overflow-x: auto;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-11xs) var(--padding-10xs) var(--padding-11xs)
+    var(--padding-7xs);
+  gap: var(--gap-11xs);
+  flex-shrink: 0;
+  font-size: var(--font-size-xs);
+  color: var(--green-200);
+}
+.collectedParent,
+.dollarValue,
+.frameParent {
+  display: flex;
+  justify-content: flex-start;
+}
+.collectedParent {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-5xs);
+  font-size: var(--font-size-base);
+  color: var(--purple-100);
+}
+.frameParent {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 177px;
+}
+.collectedfees {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--purple-400);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: var(--padding-5xs);
+  gap: var(--gap-5xs);
+  cursor: pointer;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--white);
+  font-family: var(--font-poppins);
+}
