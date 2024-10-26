@@ -1,0 +1,98 @@
+.logoSymbiosis1Icon,
+.topSpacer {
+  height: 48px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.topSpacer {
+  align-self: stretch;
+  display: none;
+}
+.logoSymbiosis1Icon {
+  width: 48px;
+}
+.symbiosis {
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  color: inherit;
+}
+.invitedInner,
+.logoSymbiosis1Parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.logoSymbiosis1Parent {
+  gap: var(--gap-5xs);
+}
+.invitedInner {
+  padding: 0 var(--padding-29xl);
+}
+.youWereInvited {
+  position: relative;
+  text-shadow: var(--shade-standard);
+}
+.youWereInvitedByParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 112px;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--white);
+  font-family: var(--font-poppins);
+}
+.andStartEarning,
+.connectwallet {
+  align-self: stretch;
+}
+.andStartEarning {
+  position: relative;
+  text-shadow: var(--shade-standard);
+}
+.connectwalletParent,
+.invited,
+.invitedChild {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.connectwalletParent {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-5xs);
+}
+.invited,
+.invitedChild {
+  color: var(--white);
+  font-family: var(--font-poppins);
+}
+.invitedChild {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 68px;
+  text-align: center;
+  font-size: var(--font-size-xl);
+}
+.invited {
+  width: 393px;
+  max-width: 100%;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 80px var(--padding-13xl) 74px;
+  box-sizing: border-box;
+  gap: var(--gap-13xl);
+  background-image: url(/invited@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+}

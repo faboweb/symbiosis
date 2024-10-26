@@ -69,7 +69,7 @@ const Modalfooter: NextPage<ModalfooterType> = ({
             </div>
             <div className={styles.tradeHeadingParent}>
               <div className={styles.tradeHeading} />
-              <h3 className={styles.tradeYourEarnings}>Trade your earnings!</h3>
+              <a href="https://app.osmosis.zone"><h3 className={styles.tradeYourEarnings}>Trade your earnings!</h3></a>
               <div className={styles.tradeOptions}>
                 <button className={styles.buttonosmosis}>
                   <img

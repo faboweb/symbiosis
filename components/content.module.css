@@ -1,0 +1,62 @@
+.logoSymbiosis1Icon {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.symbiosis {
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  color: inherit;
+  display: inline-block;
+  min-width: 111px;
+}
+.subContent,
+.symbiosisWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.symbiosisWrapper {
+  flex-direction: column;
+  padding: var(--padding-12xs) 0 0;
+}
+.subContent {
+  flex-direction: row;
+  gap: var(--gap-9xs);
+  cursor: pointer;
+}
+.refer {
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  color: inherit;
+}
+.btntext,
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.btntext {
+  border-radius: var(--br-5xs);
+  background-color: var(--purple-300);
+  justify-content: flex-start;
+  padding: var(--padding-9xs) var(--padding-mini) var(--padding-9xs)
+    var(--padding-base);
+  font-size: var(--font-size-base);
+}
+.content {
+  align-self: stretch;
+  backdrop-filter: var(--blur);
+  background-color: var(--color-gray-100);
+  justify-content: space-between;
+  padding: var(--padding-base);
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--white);
+  font-family: var(--font-poppins);
+}

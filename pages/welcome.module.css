@@ -1,0 +1,111 @@
+.topSpacer {
+  align-self: stretch;
+  height: 48px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.earn,
+.refer,
+.repeat {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+.earn {
+  color: var(--pink);
+}
+.repeat {
+  color: var(--orange);
+}
+.referEarnRepeat {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) 0 0;
+}
+.referUsersToContainer {
+  position: relative;
+}
+.btntext {
+  align-self: stretch;
+  box-shadow: var(--shade-standard);
+}
+.description,
+.referUsers {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-base);
+}
+.referUsers {
+  height: 156px;
+  backdrop-filter: var(--blur);
+  border-radius: var(--br-5xs);
+  background-color: rgba(9, 5, 36, 0.9);
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+}
+.description {
+  flex: 1;
+  border-radius: var(--br-base) var(--br-base) 0 0;
+  overflow: hidden;
+  align-items: center;
+  justify-content: flex-end;
+  background-image: url(/description@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+  font-size: var(--font-size-xl);
+}
+.coin1Icon {
+  width: 196px;
+  height: 173px;
+  position: absolute;
+  margin: 0 !important;
+  top: 45px;
+  right: -45px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+  z-index: 1;
+}
+.actions,
+.iphone1415Pro7 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.actions {
+  align-self: stretch;
+  height: 740px;
+  padding: var(--padding-5xl) var(--padding-5xl) 0;
+  position: relative;
+  gap: var(--gap-13xl);
+  text-align: left;
+  font-size: var(--font-size-29xl);
+  color: var(--white);
+  font-family: var(--font-poppins);
+}
+.iphone1415Pro7 {
+  width: 393px;
+  max-width: 100%;
+  overflow: hidden;
+  padding: var(--padding-29xl) 0 0;
+  background-image: url(/iphone-14--15-pro--7@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  line-height: normal;
+  letter-spacing: normal;
+}

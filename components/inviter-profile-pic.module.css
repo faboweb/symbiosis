@@ -1,0 +1,12 @@
+.inviterprofilepicIcon {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  margin: 0 !important;
+  top: -80px;
+  left: calc(50% - 79.5px);
+  border-radius: var(--br-181xl);
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}

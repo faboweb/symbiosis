@@ -1,0 +1,85 @@
+.invitername {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.groups3Icon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+}
+.inviterreferals {
+  display: inline-block;
+  min-width: 36px;
+}
+.inviterreferals,
+.referrals {
+  position: relative;
+}
+.groups3Parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+  font-size: var(--font-size-base);
+}
+.inviternameParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  gap: var(--gap-5xs);
+}
+.totalCollected {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+.inFees {
+  position: relative;
+  font-size: var(--font-size-base);
+}
+.inveterfeesParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-31xl);
+  gap: var(--gap-7xs);
+  text-align: left;
+  font-size: var(--font-size-13xl);
+}
+.frameParent,
+.totalCollectedParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.totalCollectedParent {
+  border-top: 1px solid var(--purple-100);
+  justify-content: center;
+  padding: var(--padding-3xl) 0 0;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+}
+.frameParent {
+  backdrop-filter: var(--blur);
+  border-radius: var(--br-base);
+  background-color: var(--color-darkslateblue-100);
+  justify-content: flex-start;
+  padding: var(--padding-77xl) var(--padding-13xl) var(--padding-13xl);
+  position: relative;
+  gap: var(--gap-5xl);
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--white);
+  font-family: var(--font-poppins);
+}
