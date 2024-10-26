@@ -47,7 +47,7 @@
   gap: var(--gap-5xs);
 }
 .menu {
-  width: 366px;
+  width: 100%;
   background-color: var(--purple-1000);
   max-width: 100%;
   justify-content: space-between;

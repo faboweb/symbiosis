@@ -3,6 +3,7 @@ import { useCallback } from "react";
 import { useRouter } from "next/router";
 import Btnmenu from "./btnmenu";
 import styles from "./modalfooter.module.css";
+import { useChain } from "@cosmos-kit/react";
 
 export type ModalfooterType = {
   className?: string;
@@ -13,10 +14,20 @@ const Modalfooter: NextPage<ModalfooterType> = ({
   className = "",
   onClose,
 }) => {
+  const {
+    status,
+    disconnect
+  } = useChain('osmosis');
   const router = useRouter();
 
-  const onButtonHomeContainerClick = useCallback(() => {
+  const _disconnect = useCallback(() => {
+    disconnect();
+
     router.push("/");
+  }, [])
+  
+  const onButtonHomeContainerClick = useCallback(() => {
+    router.push("/home");
   }, [router]);
 
   const onButtonEarningsContainerClick = useCallback(() => {
@@ -69,21 +80,23 @@ const Modalfooter: NextPage<ModalfooterType> = ({
             </div>
             <div className={styles.tradeHeadingParent}>
               <div className={styles.tradeHeading} />
-              <a href="https://app.osmosis.zone"><h3 className={styles.tradeYourEarnings}>Trade your earnings!</h3></a>
-              <div className={styles.tradeOptions}>
-                <button className={styles.buttonosmosis}>
-                  <img
-                    className={styles.osmosisIconbrandmarkWhite1}
-                    alt=""
-                    src="/osmosis-iconbrandmark-white-11.svg"
-                  />
-                </button>
-                <img className={styles.doggo1Icon} alt="" src="/doggo-1.svg" />
-              </div>
+              <a href="https://app.osmosis.zone">
+                <h3 className={styles.tradeYourEarnings}>Trade your earnings!</h3>
+                <div className={styles.tradeOptions}>
+                  <button className={styles.buttonosmosis}>
+                    <img
+                      className={styles.osmosisIconbrandmarkWhite1}
+                      alt=""
+                      src="/osmosis-iconbrandmark-white-11.svg"
+                    />
+                  </button>
+                  <img className={styles.doggo1Icon} alt="" src="/doggo-1.svg" />
+                </div>
+              </a>
             </div>
           </div>
         </div>
-        <button className={styles.buttonlogout}>
+        <button className={styles.buttonlogout} onClick={_disconnect}>
           <img className={styles.doorOpenIcon} alt="" src="/door-open.svg" />
           <a className={styles.logOut}>Log Out</a>
         </button>

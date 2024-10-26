@@ -24,8 +24,8 @@
   background-color: var(--purple-1000);
   overflow: hidden;
   align-items: flex-start;
-  padding: var(--padding-29xl) 0 0;
   box-sizing: border-box;
   line-height: normal;
   letter-spacing: normal;
+  height: 100vh;
 }

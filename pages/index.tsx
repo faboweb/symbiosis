@@ -1,7 +1,10 @@
 import type { NextPage } from "next";
 import { Button } from "@mui/material";
 import Content from "../components/content";
-import styles from "./invite.module.css";
+import styles from "./welcome.module.css";
+import { useChain } from "@cosmos-kit/react";
+import { WalletStatus } from "cosmos-kit";
+import { useRouter } from "next/router";
 
 export type LandingSymbiosisType = {
   className?: string;
@@ -10,6 +13,23 @@ export type LandingSymbiosisType = {
 const LandingSymbiosis: NextPage<LandingSymbiosisType> = ({
   className = "",
 }) => {
+  const {
+    // chain,
+    status,
+    // wallet,
+    // username,
+    // address,
+    // message,
+    // connect,
+    openView,
+  } = useChain('osmosis');
+  const router = useRouter();
+
+  if (status === WalletStatus.Connected) {
+    // redirect to home
+    router.push("/home");
+  }
+
   return (
     <div className={[styles.iphone1415Pro7, className].join(" ")}>
       <div className={styles.topSpacer} />
@@ -29,6 +49,7 @@ const LandingSymbiosis: NextPage<LandingSymbiosisType> = ({
             </div>
             <Button
               className={styles.btntext}
+              onClick={openView}
               variant="contained"
               sx={{
                 textTransform: "none",

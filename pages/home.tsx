@@ -6,8 +6,32 @@ import Menu from "../components/menu";
 import ProfileInfo from "../components/profile-info";
 import Btnicon from "../components/btnicon";
 import styles from "./index.module.css";
+import { useChain } from "@cosmos-kit/react";
+import {QRCodeSVG} from 'qrcode.react';
+import crypto from 'crypto';
+import { WalletStatus } from "cosmos-kit";
+import { useRouter } from "next/router";
 
 const Home: NextPage = () => {
+  const {
+    status,
+    address
+  } = useChain('osmosis');
+
+  const router = useRouter();
+
+  if (status === WalletStatus.Disconnected) {
+    router.push("/");
+    return
+  }
+
+  // we shorten the address to 8 chars to not be too obvious
+  const code = address ? crypto.createHash('sha256')
+    .update(address)
+    .digest('hex')
+    .slice(0, 8) : null;
+  const url = window.location.origin + "/invite?code=" + code
+
   const [isModalfooterOpen, setModalfooterOpen] = useState(false);
 
   const openModalfooter = useCallback(() => {
@@ -18,12 +42,18 @@ const Home: NextPage = () => {
     setModalfooterOpen(false);
   }, []);
 
+  const copyToClipboard = (text: string) => {
+      navigator.clipboard.writeText(text)
+          .then(() => alert("Text copied to clipboard!"))
+          .catch((err) => alert("Failed to copy text"));
+  };
+
   return (
     <>
       <div className={styles.home}>
         <div className={styles.topSpacer} />
         <Menu
-          menuWidth="393px"
+          // menuWidth="393px"
           menuGap="unset"
           logoSymbiosis1IconMinHeight="unset"
           sYMBIOSISDisplay="unset"
@@ -39,17 +69,19 @@ const Home: NextPage = () => {
             <ProfileInfo />
             <div className={styles.shareYourCodeParent}>
               <div className={styles.shareYourCode}>Share your code</div>
-              <div className={styles.codeDisplay}>
-                <a className={styles.referralcode}>4a2f-6fg5</a>
+              <div className={styles.codeDisplay} onClick={() => copyToClipboard(code)}>
+                <a className={styles.referralcode}>{code || "******"}</a>
                 <Btnicon contentCopy="/content-copy.svg" />
               </div>
             </div>
-            <img
-              className={styles.referralqrIcon}
-              loading="lazy"
-              alt=""
-              src="/referralqr@2x.png"
-            />
+            {
+              !code ? <img
+                className={styles.referralqrIcon}
+                loading="lazy"
+                alt=""
+                src="/referralqr@2x.png"
+              /> : <QRCodeSVG className={styles.referralqrIcon} value={url} />
+            }
             <div className={styles.totalCollectedParent}>
               <b className={styles.totalCollected}>Total Collected</b>
               <div className={styles.feesAmount}>

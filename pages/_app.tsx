@@ -38,7 +38,7 @@ function CreateCosmosApp({ Component, pageProps }: AppProps) {
   };
 
   return (
-    <InterchainThemeProvider>
+    // <InterchainThemeProvider>
       <ChainProvider
         chains={chains}
         assetLists={assets}
@@ -81,7 +81,7 @@ function CreateCosmosApp({ Component, pageProps }: AppProps) {
           </Fragment>
         </Box>
       </ChainProvider>
-    </InterchainThemeProvider>
+    // </InterchainThemeProvider>
   );
 }
 
