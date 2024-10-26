@@ -1,0 +1,51 @@
+.dashboard1,
+.topSpacer {
+  align-self: stretch;
+  position: relative;
+}
+.topSpacer {
+  height: 48px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.dashboard1 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+.dashboardParent {
+  align-self: stretch;
+  align-items: center;
+  padding: 0;
+  gap: var(--gap-5xl);
+}
+.content,
+.dashboard,
+.dashboardParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.content {
+  align-self: stretch;
+  align-items: center;
+  padding: var(--padding-5xl);
+  gap: var(--gap-5xl);
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--white);
+  font-family: var(--font-poppins);
+}
+.dashboard {
+  width: 100%;
+  position: relative;
+  background-color: var(--purple-1000);
+  overflow: hidden;
+  align-items: flex-start;
+  padding: var(--padding-29xl) 0 0;
+  box-sizing: border-box;
+  line-height: normal;
+  letter-spacing: normal;
+}

@@ -1,0 +1,97 @@
+.bottleBlueIcon,
+.profilepicIcon {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.profilepicIcon {
+  height: 80px;
+  width: 80px;
+  border-radius: var(--br-181xl);
+  object-fit: cover;
+}
+.bottleBlueIcon {
+  height: 32px;
+  width: 32px;
+}
+.profileDetails,
+.symbiosislevel {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.symbiosislevel {
+  border-radius: var(--br-81xl);
+  background-color: var(--color-violet);
+  border: 1px solid var(--purple-1000);
+  align-items: center;
+  padding: 0 var(--padding-12xs);
+  z-index: 1;
+  margin-left: -36px;
+}
+.profileDetails {
+  align-items: flex-end;
+}
+.profilename {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.groups3Icon {
+  height: 16px;
+  width: 16px;
+}
+.groups3Icon,
+.profilereferrals,
+.referrals {
+  position: relative;
+}
+.referrals {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  min-width: 54px;
+}
+.referralOptions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.nameAndReferrals,
+.referralOptionsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.referralOptionsWrapper {
+  border-radius: var(--br-9xs);
+  background-color: var(--purple-400);
+  justify-content: flex-start;
+  padding: var(--padding-9xs) var(--padding-5xs);
+  font-size: var(--font-size-xs);
+  color: var(--purple-100);
+}
+.nameAndReferrals {
+  flex: 1;
+  justify-content: center;
+  min-width: 159px;
+}
+.profileInfo {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: var(--gap-3xs);
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--white);
+  font-family: var(--font-poppins);
+}

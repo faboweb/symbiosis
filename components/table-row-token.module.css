@@ -1,0 +1,58 @@
+.tokenicon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.iconContainer {
+  border-radius: var(--br-81xl);
+  background-color: var(--purple-400);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-11xs);
+}
+.ticker,
+.tokenname {
+  position: relative;
+}
+.ticker {
+  font-size: var(--font-size-base);
+  color: var(--purple-100);
+}
+.tokenInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-5xs);
+}
+.tokenContainer {
+  flex: 1;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.tablerowtoken,
+.tokenContainer,
+.tokenValueContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.tokenValueContainer {
+  width: 110px;
+  justify-content: center;
+  gap: var(--gap-10xs);
+}
+.tablerowtoken {
+  align-self: stretch;
+  border-bottom: 1px solid var(--purple-400);
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-5xs);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--white);
+  font-family: var(--font-poppins);
+}

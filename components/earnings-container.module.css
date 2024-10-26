@@ -1,0 +1,125 @@
+.myEarnings {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+.myEarnings,
+.totalCollected {
+  align-self: stretch;
+}
+.inFees,
+.myfees,
+.totalCollected {
+  position: relative;
+}
+.inFees {
+  font-size: var(--font-size-base);
+  color: var(--purple-100);
+}
+.collectedFees,
+.feesInfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.feesInfo {
+  flex-direction: row;
+  gap: var(--gap-7xs);
+  text-align: left;
+  font-size: var(--font-size-13xl);
+}
+.collectedFees {
+  width: 168px;
+  flex-direction: column;
+}
+.hrChange {
+  position: relative;
+  display: inline-block;
+  min-width: 106px;
+}
+.feesdaypercentage,
+.percentageValue,
+.percentageValue1 {
+  position: relative;
+  display: inline-block;
+  min-width: 10px;
+}
+.feesdaypercentage,
+.percentageValue1 {
+  min-width: 13px;
+}
+.percentageValue1 {
+  min-width: 11px;
+}
+.dailyPercentage {
+  border-radius: var(--br-81xl);
+  background-color: var(--green-600);
+  overflow-x: auto;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) var(--padding-12xs) var(--padding-11xs)
+    var(--padding-9xs);
+  gap: var(--gap-11xs);
+  flex-shrink: 0;
+  font-size: var(--font-size-xs);
+  color: var(--green-200);
+}
+.dailyChange,
+.dailyPercentage,
+.hourlyChange {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.dailyChange {
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+  text-align: left;
+  font-size: var(--font-size-xl);
+}
+.hourlyChange {
+  align-self: stretch;
+  border-radius: var(--br-81xl);
+  background-color: var(--color-gray-200);
+  justify-content: space-between;
+  padding: var(--padding-9xs) var(--padding-5xs) var(--padding-9xs)
+    var(--padding-xs);
+  gap: var(--gap-xl);
+  font-size: var(--font-size-base);
+}
+.coin1Icon {
+  width: 90px;
+  height: 79px;
+  position: absolute;
+  margin: 0 !important;
+  top: 24px;
+  left: -9px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.earningsContainer,
+.earningsDetails {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.earningsDetails {
+  border-radius: var(--br-base);
+  background: radial-gradient(50% 50%at 50% 50%, #170967, #2c2047);
+  justify-content: center;
+  padding: var(--padding-5xl);
+  position: relative;
+  gap: var(--gap-5xs);
+  font-size: var(--font-size-xl);
+}
+.earningsContainer {
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--white);
+  font-family: var(--font-poppins);
+}

@@ -1,0 +1,63 @@
+.logoSymbiosis1Icon {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 32px;
+}
+.symbiosis {
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  color: inherit;
+  display: inline-block;
+  min-width: 110px;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-9xs);
+  cursor: pointer;
+}
+.notificationsIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.buttonbell,
+.menu,
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.buttonbell {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-9xs);
+  background-color: transparent;
+  justify-content: center;
+}
+.menu,
+.navigation {
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.menu {
+  width: 366px;
+  background-color: var(--purple-1000);
+  max-width: 100%;
+  justify-content: space-between;
+  padding: var(--padding-base);
+  box-sizing: border-box;
+  line-height: normal;
+  letter-spacing: normal;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--white);
+  font-family: var(--font-poppins);
+}

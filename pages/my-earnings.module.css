@@ -1,0 +1,31 @@
+.topSpacer {
+  align-self: stretch;
+  height: 48px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.earningsContainerParent,
+.myearnings {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.earningsContainerParent {
+  align-self: stretch;
+  align-items: center;
+  padding: var(--padding-5xl);
+  gap: var(--gap-5xl);
+}
+.myearnings {
+  width: 100%;
+  position: relative;
+  background-color: var(--purple-1000);
+  overflow: hidden;
+  align-items: flex-start;
+  padding: var(--padding-29xl) 0 0;
+  box-sizing: border-box;
+  line-height: normal;
+  letter-spacing: normal;
+}

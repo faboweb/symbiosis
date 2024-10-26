@@ -1,0 +1,86 @@
+.amount,
+.coin {
+  position: relative;
+  display: inline-block;
+}
+.coin {
+  min-width: 49px;
+}
+.amount {
+  width: 111px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.navigationAndPages {
+  align-self: stretch;
+  background-color: var(--purple-400);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-xs) var(--padding-5xs);
+  gap: var(--gap-xl);
+}
+.arrowBackIosNewIcon {
+  height: 16px;
+  width: 16px;
+  position: relative;
+}
+.buttonprev {
+  border-radius: var(--br-81xl);
+  background-color: var(--purple-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-9xs);
+}
+.currentpage {
+  position: relative;
+  display: inline-block;
+  min-width: 8px;
+}
+.of,
+.totalpages {
+  flex: 1;
+  position: relative;
+}
+.totalpages {
+  display: inline-block;
+  min-width: 12px;
+}
+.currentpageParent {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+  min-width: 27px;
+}
+.navigationAndPages1,
+.navigationAndPagesParent {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.navigationAndPages1 {
+  background-color: var(--purple-400);
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: var(--padding-mini) var(--padding-5xs) var(--padding-mini)
+    var(--padding-212xl);
+  gap: var(--gap-5xs);
+  font-size: var(--font-size-base);
+}
+.navigationAndPagesParent {
+  border-radius: var(--br-base);
+  border: 1px solid var(--purple-400);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--white);
+  font-family: var(--font-poppins);
+}

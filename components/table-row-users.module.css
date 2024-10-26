@@ -1,0 +1,43 @@
+.leadername {
+  flex: 1;
+  position: relative;
+}
+.userinvites {
+  align-self: stretch;
+  position: relative;
+}
+.userinvitesWrapper {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-3xs);
+  box-sizing: border-box;
+  text-align: center;
+}
+.userFees {
+  position: relative;
+}
+.tablerowusers,
+.userFeesParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.userFeesParent {
+  width: 90px;
+  justify-content: center;
+  gap: var(--gap-10xs);
+}
+.tablerowusers {
+  align-self: stretch;
+  border-bottom: 1px solid var(--purple-400);
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-5xs);
+  gap: var(--gap-smi);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--white);
+  font-family: var(--font-poppins);
+}

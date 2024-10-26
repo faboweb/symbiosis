@@ -1,0 +1,94 @@
+.userName {
+  flex: 1;
+  position: relative;
+  text-align: left;
+}
+.invites,
+.volume {
+  position: relative;
+  display: inline-block;
+}
+.invites {
+  width: 81px;
+  flex-shrink: 0;
+}
+.volume {
+  min-width: 91px;
+}
+.userInfo {
+  align-self: stretch;
+  background-color: var(--purple-400);
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-8xs) var(--padding-xs)
+    var(--padding-5xs);
+  gap: var(--gap-xs);
+  flex-shrink: 0;
+  text-align: center;
+}
+.arrowBackIosNewIcon {
+  height: 16px;
+  width: 16px;
+  position: relative;
+}
+.buttonprev {
+  border-radius: var(--br-81xl);
+  background-color: var(--purple-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-9xs);
+}
+.currentpage {
+  position: relative;
+  display: inline-block;
+  min-width: 8px;
+}
+.of,
+.totalpages {
+  flex: 1;
+  position: relative;
+}
+.totalpages {
+  display: inline-block;
+  min-width: 12px;
+}
+.currentpageParent {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+  min-width: 27px;
+}
+.userInfo1,
+.userProgress {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.userInfo1 {
+  background-color: var(--purple-400);
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: var(--padding-mini) var(--padding-5xs) var(--padding-mini)
+    var(--padding-212xl);
+  gap: var(--gap-5xs);
+  font-size: var(--font-size-base);
+}
+.userProgress {
+  border-radius: var(--br-base);
+  border: 1px solid var(--purple-400);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--white);
+  font-family: var(--font-poppins);
+}

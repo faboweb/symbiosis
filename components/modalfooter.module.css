@@ -1,0 +1,182 @@
+.main {
+  align-self: stretch;
+  height: 4px;
+  position: relative;
+  backdrop-filter: var(--blur);
+  background: linear-gradient(
+    90deg,
+    #6a67ea,
+    #462adf 33.4%,
+    #ff722b 66%,
+    #462adf
+  );
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.homeButtonContainer,
+.navigationButtons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.homeButtonContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 232px;
+  flex-direction: row;
+  padding: 0 0 186px;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100%;
+}
+.navigationButtons {
+  flex-direction: column;
+  gap: var(--gap-base);
+}
+.tradeHeading {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  margin: 0 !important;
+  right: -11px;
+  bottom: -157px;
+  filter: blur(200px);
+  border-radius: var(--br-81xl);
+  background-color: rgba(255, 114, 43, 0.6);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.tradeYourEarnings {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+.osmosisIconbrandmarkWhite1 {
+  height: 32px;
+  width: 118.9px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.buttonosmosis {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs) var(--padding-base);
+  background-color: var(--purple-300);
+  border-radius: var(--br-5xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 1;
+}
+.doggo1Icon {
+  height: 140px;
+  width: 142.5px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: -68px;
+  left: 0;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.tradeOptions {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: relative;
+}
+.navigationButtonsParent,
+.tradeHeadingParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.tradeHeadingParent {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  overflow: hidden;
+  padding: var(--padding-base);
+  position: relative;
+  background-image: url(/frame-65@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.navigationButtonsParent {
+  position: absolute;
+  top: 62px;
+  left: 0;
+  width: 100%;
+}
+.homeButtonContainerParent {
+  align-self: stretch;
+  height: 402px;
+  position: relative;
+  max-width: 100%;
+}
+.doorOpenIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.logOut {
+  text-decoration: none;
+  position: relative;
+  font-size: var(--font-size-base);
+  font-family: var(--font-poppins);
+  color: #d91414;
+  text-align: left;
+}
+.buttonlogout,
+.content,
+.modalfooter {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.buttonlogout {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs) var(--padding-mini) var(--padding-5xs)
+    var(--padding-base);
+  background-color: #270404;
+  border-radius: var(--br-5xs);
+  flex-direction: row;
+  gap: var(--gap-5xs);
+}
+.content,
+.modalfooter {
+  overflow: hidden;
+  flex-direction: column;
+  max-width: 100%;
+}
+.content {
+  align-self: stretch;
+  backdrop-filter: var(--blur);
+  background-color: var(--color-gray-100);
+  padding: var(--padding-base);
+  box-sizing: border-box;
+  gap: var(--gap-5xl);
+  text-align: left;
+  font-size: 28px;
+  color: var(--white);
+  font-family: var(--font-poppins);
+}
+.modalfooter {
+  width: 393px;
+  position: relative;
+  border-radius: var(--br-9xs) var(--br-9xs) 0 0;
+  line-height: normal;
+  letter-spacing: normal;
+  max-height: 100%;
+}

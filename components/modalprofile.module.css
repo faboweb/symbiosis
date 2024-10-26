@@ -1,0 +1,108 @@
+.modalprofileChild {
+  align-self: stretch;
+  height: 4px;
+  position: relative;
+  backdrop-filter: var(--blur);
+  background: linear-gradient(
+    90deg,
+    #6a67ea,
+    #462adf 33.4%,
+    #ff722b 66%,
+    #462adf
+  );
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.editProfile {
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  color: inherit;
+}
+.addAPhotoIcon {
+  height: 62px;
+  width: 62px;
+  position: relative;
+}
+.submitprofilepicture {
+  box-shadow: var(--shade-standard);
+  border-radius: 2000px;
+  background-color: var(--purple-100);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-10xl);
+}
+.submitprofilename {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.submitprofilepictureParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 40px 0 0;
+  gap: var(--gap-5xl);
+}
+.back {
+  position: relative;
+  display: inline-block;
+  min-width: 50px;
+}
+.buttonback {
+  border-radius: var(--br-5xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xs) 61px;
+}
+.buttonsave {
+  flex: 1;
+}
+.bottomButtons {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: var(--gap-base);
+  font-size: var(--font-size-xl);
+  color: var(--purple-100);
+}
+.modalprofile,
+.profileForm {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.profileForm {
+  align-self: stretch;
+  backdrop-filter: var(--blur);
+  background-color: var(--color-gray-100);
+  padding: var(--padding-base);
+  gap: var(--gap-13xl);
+}
+.modalprofile {
+  width: 393px;
+  position: relative;
+  border-radius: var(--br-9xs) var(--br-9xs) 0 0;
+  line-height: normal;
+  letter-spacing: normal;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--white);
+  font-family: var(--font-poppins);
+}
