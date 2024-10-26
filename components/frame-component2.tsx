@@ -32,7 +32,7 @@ const FrameComponent2: NextPage<FrameComponent2Type> = ({ className = "" }) => {
             alt=""
             src="/groups-3.svg"
           />
-          <div className={styles.profilereferrals}>1024</div>
+          <div className={styles.profilereferrals}>0</div>
           <a className={styles.referrals}>Referrals</a>
         </div>
         <div className={styles.levelInfo}>
@@ -50,7 +50,7 @@ const FrameComponent2: NextPage<FrameComponent2Type> = ({ className = "" }) => {
       <div className={styles.invitedUsersInfoParent}>
         <div className={styles.invitedUsersInfo}>
           <div className={styles.youHaveInvited}>You have invited</div>
-          <div className={styles.youHaveInvited}>50</div>
+          <div className={styles.youHaveInvited}>0</div>
           <div className={styles.users}>users</div>
         </div>
         <div className={styles.invitationSummary}>

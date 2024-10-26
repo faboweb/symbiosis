@@ -7,6 +7,7 @@
   flex-shrink: 0;
   object-fit: cover;
 }
+
 .profilename {
   margin: 0;
   position: relative;
@@ -14,40 +15,47 @@
   font-weight: 400;
   font-family: inherit;
 }
+
 .profileInfo,
 .profilenameParent {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 .profilenameParent {
   flex: 1;
   justify-content: flex-start;
   gap: var(--gap-5xs);
   min-width: 135px;
 }
+
 .profileInfo {
   align-self: stretch;
   justify-content: center;
   gap: var(--gap-3xs);
   color: var(--white);
 }
+
 .groups3Icon {
   height: 24px;
   width: 24px;
   position: relative;
 }
+
 .profilereferrals,
 .referrals {
   position: relative;
   display: inline-block;
   min-width: 45px;
 }
+
 .referrals {
   text-decoration: none;
   color: inherit;
   min-width: 89px;
 }
+
 .referralsInfo {
   display: flex;
   flex-direction: row;
@@ -55,45 +63,50 @@
   justify-content: flex-start;
   gap: var(--gap-9xs);
 }
+
 .bottleBlueIcon {
   height: 20px;
   width: 20px;
   overflow: hidden;
   flex-shrink: 0;
 }
+
 .bottleBlueIcon,
 .symbiosislevelname {
   position: relative;
+  display: inline-block;
+  white-space: nowrap;
 }
+
 .levelInfo,
 .symbiosislevel {
   display: flex;
   justify-content: flex-start;
 }
+
 .symbiosislevel {
   border-radius: var(--br-9xs);
   background-color: var(--purple-400);
   flex-direction: row;
   align-items: center;
-  padding: var(--padding-11xs) var(--padding-10xs) var(--padding-11xs)
-    var(--padding-11xs);
+  padding: var(--padding-11xs) var(--padding-10xs) var(--padding-11xs) var(--padding-11xs);
   gap: var(--gap-9xs);
 }
+
 .levelInfo {
   border-radius: var(--br-8xs);
-  background: linear-gradient(
-    90deg,
-    #6a67ea,
-    #462adf 33.4%,
-    #ff722b 66%,
-    #462adf
-  );
+  background: linear-gradient(90deg,
+      #6a67ea,
+      #462adf 33.4%,
+      #ff722b 66%,
+      #462adf);
   flex-direction: column;
   align-items: flex-start;
   padding: var(--padding-12xs);
   font-size: var(--font-size-base);
   color: var(--white);
 }
+
 .referralsInfoParent {
   align-self: stretch;
   display: flex;
@@ -104,15 +117,18 @@
   gap: var(--gap-3xs);
   font-size: var(--font-size-xl);
 }
+
 .users,
 .youHaveInvited {
   position: relative;
   font-weight: 600;
 }
+
 .users {
   display: inline-block;
   min-width: 57px;
 }
+
 .invitedUsersInfo {
   display: flex;
   flex-direction: row;
@@ -122,19 +138,23 @@
   font-size: var(--font-size-xl);
   color: var(--white);
 }
+
 .referralsleft,
 .share {
   position: relative;
   display: inline-block;
 }
+
 .share {
   text-decoration: none;
   color: inherit;
   min-width: 48px;
 }
+
 .referralsleft {
   min-width: 22px;
 }
+
 .invitationSummary {
   display: flex;
   flex-direction: row;
@@ -143,15 +163,18 @@
   padding: 0 var(--padding-41xl);
   gap: var(--gap-9xs);
 }
+
 .toBecomeA {
   position: relative;
   display: inline-block;
   min-width: 107px;
 }
+
 .nextlevel {
   position: relative;
   color: var(--orange);
 }
+
 .invitationSummary1 {
   display: flex;
   flex-direction: row;
@@ -160,6 +183,7 @@
   padding: 0 var(--padding-32xl);
   gap: var(--gap-9xs);
 }
+
 .invitedUsersInfoParent,
 .profileInfoParent {
   align-self: stretch;
@@ -168,12 +192,14 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .invitedUsersInfoParent {
   border-radius: var(--br-5xs);
   background-color: var(--color-gray-200);
   padding: var(--padding-5xs);
   font-size: var(--font-size-base);
 }
+
 .profileInfoParent {
   border-radius: var(--br-base);
   background: radial-gradient(50% 50%at 50% 50%, #170967, #2c2047);

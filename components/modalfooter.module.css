@@ -3,22 +3,22 @@
   height: 4px;
   position: relative;
   backdrop-filter: var(--blur);
-  background: linear-gradient(
-    90deg,
-    #6a67ea,
-    #462adf 33.4%,
-    #ff722b 66%,
-    #462adf
-  );
+  background: linear-gradient(90deg,
+      #6a67ea,
+      #462adf 33.4%,
+      #ff722b 66%,
+      #462adf);
   overflow: hidden;
   flex-shrink: 0;
 }
+
 .homeButtonContainer,
 .navigationButtons {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .homeButtonContainer {
   position: absolute;
   top: 0;
@@ -30,10 +30,12 @@
   max-width: 100%;
   width: 100%;
 }
+
 .navigationButtons {
   flex-direction: column;
   gap: var(--gap-base);
 }
+
 .tradeHeading {
   width: 200px;
   height: 200px;
@@ -47,6 +49,7 @@
   overflow: hidden;
   flex-shrink: 0;
 }
+
 .tradeYourEarnings {
   margin: 0;
   align-self: stretch;
@@ -55,6 +58,7 @@
   font-weight: 700;
   font-family: inherit;
 }
+
 .osmosisIconbrandmarkWhite1 {
   height: 32px;
   width: 118.9px;
@@ -62,6 +66,7 @@
   overflow: hidden;
   flex-shrink: 0;
 }
+
 .buttonosmosis {
   cursor: pointer;
   border: 0;
@@ -75,6 +80,7 @@
   justify-content: flex-start;
   z-index: 1;
 }
+
 .doggo1Icon {
   height: 140px;
   width: 142.5px;
@@ -85,6 +91,7 @@
   overflow: hidden;
   flex-shrink: 0;
 }
+
 .tradeOptions {
   align-self: stretch;
   display: flex;
@@ -93,6 +100,7 @@
   justify-content: flex-end;
   position: relative;
 }
+
 .navigationButtonsParent,
 .tradeHeadingParent {
   display: flex;
@@ -101,6 +109,7 @@
   justify-content: flex-start;
   gap: var(--gap-5xl);
 }
+
 .tradeHeadingParent {
   align-self: stretch;
   border-radius: var(--br-5xs);
@@ -111,7 +120,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  max-width: 91%;
+  width: auto;
 }
+
 .navigationButtonsParent {
   position: absolute;
   top: 62px;
@@ -119,17 +131,20 @@
   width: 100%;
   min-width: 336px;
 }
+
 .homeButtonContainerParent {
   align-self: stretch;
   height: 402px;
   position: relative;
   max-width: 100%;
 }
+
 .doorOpenIcon {
   height: 24px;
   width: 24px;
   position: relative;
 }
+
 .logOut {
   text-decoration: none;
   position: relative;
@@ -138,6 +153,7 @@
   color: #d91414;
   text-align: left;
 }
+
 .buttonlogout,
 .content,
 .modalfooter {
@@ -145,22 +161,25 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .buttonlogout {
   cursor: pointer;
   border: 0;
-  padding: var(--padding-5xs) var(--padding-mini) var(--padding-5xs)
-    var(--padding-base);
+  padding: var(--padding-5xs) var(--padding-mini) var(--padding-5xs) var(--padding-base);
   background-color: #270404;
   border-radius: var(--br-5xs);
   flex-direction: row;
   gap: var(--gap-5xs);
+  margin-top: 33px;
 }
+
 .content,
 .modalfooter {
   overflow: hidden;
   flex-direction: column;
   max-width: 100%;
 }
+
 .content {
   align-self: stretch;
   backdrop-filter: var(--blur);
@@ -173,6 +192,7 @@
   color: var(--white);
   font-family: var(--font-poppins);
 }
+
 .modalfooter {
   width: 393px;
   position: relative;
