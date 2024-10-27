@@ -26,7 +26,6 @@ const Home: NextPage = () => {
 
   if (status === WalletStatus.Disconnected) {
     router.push("/");
-    return
   }
 
   if (status === WalletStatus.Connected && address) {
