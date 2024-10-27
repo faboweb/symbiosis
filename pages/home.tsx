@@ -22,6 +22,8 @@ const Home: NextPage = () => {
 
   const router = useRouter();
 
+  const [isModalfooterOpen, setModalfooterOpen] = useState(false);
+
   if (status === WalletStatus.Disconnected) {
     router.push("/");
     return
@@ -42,8 +44,6 @@ const Home: NextPage = () => {
     .slice(0, 8) : null;
   // const url = window.location.origin + "/invite?code=" + code
   const url = window.location.origin + "/invite?code=" + address // TODO add code lookup to system
-
-  const [isModalfooterOpen, setModalfooterOpen] = useState(false);
 
   const openModalfooter = useCallback(() => {
     setModalfooterOpen(true);
