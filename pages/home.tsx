@@ -40,7 +40,8 @@ const Home: NextPage = () => {
     .update(address)
     .digest('hex')
     .slice(0, 8) : null;
-  const url = window.location.origin + "/invite?code=" + code
+  // const url = window.location.origin + "/invite?code=" + code
+  const url = window.location.origin + "/invite?code=" + address // TODO add code lookup to system
 
   const [isModalfooterOpen, setModalfooterOpen] = useState(false);
 
@@ -90,7 +91,7 @@ const Home: NextPage = () => {
                 loading="lazy"
                 alt=""
                 src="/referralqr@2x.png"
-              /> : <QRCodeSVG className={styles.referralqrIcon} value={url} />
+              /> : <QRCodeSVG className={styles.referralqrIcon} value={url} onClick={() => copyToClipboard(url)}/>
             }
             <div className={styles.totalCollectedParent}>
               <b className={styles.totalCollected}>Total Collected</b>
