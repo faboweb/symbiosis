@@ -101,7 +101,7 @@
   /* width: 393px; */
   max-width: 100%;
   overflow: hidden;
-  padding: var(--padding-29xl) 0 0;
+  /* padding: var(--padding-29xl) 0 0; */
   background-image: url(/iphone-14--15-pro--7@3x.png);
   background-size: cover;
   background-repeat: no-repeat;

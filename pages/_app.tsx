@@ -61,7 +61,8 @@ function CreateCosmosApp({ Component, pageProps }: AppProps) {
         <Box
           className={themeClass}
           minHeight="100dvh"
-          backgroundColor={useColorModeValue("$white", "$background")}
+          backgroundImage="url(/iphone-14--15-pro--7@3x.png)"
+          backgroundRepeat="repeat"
         >
           {/* TODO fix type error */}
           {/* @ts-ignore */}
@@ -73,11 +74,13 @@ function CreateCosmosApp({ Component, pageProps }: AppProps) {
                 content="minimum-scale=1, initial-scale=1, width=device-width"
               />
             </Head>
-            <ThemeProvider theme={muiTheme}>
-              {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-              <CssBaseline />
-              <Component {...pageProps} />
-            </ThemeProvider>
+            <div className="center-container">
+              <ThemeProvider theme={muiTheme}>
+                {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+                <CssBaseline />
+                  <Component {...pageProps} />
+              </ThemeProvider>
+            </div>
           </Fragment>
         </Box>
       </ChainProvider>

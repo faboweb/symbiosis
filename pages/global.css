@@ -92,3 +92,9 @@ button {
 button:hover {
   filter: hue-rotate(20deg); /* Rotate hue by 90 degrees */
 }
+
+.center-container {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}

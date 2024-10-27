@@ -80,7 +80,7 @@ const LandingSymbiosis: NextPage<LandingSymbiosisType> = ({
                 "&:hover": { background: "#462adf" },
               }}
             >
-              Create Referral
+              <b>Create Referral</b>
             </Button>
           </div>
         </div>

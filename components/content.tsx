@@ -39,9 +39,9 @@ const Content: NextPage<ContentType> = ({ className = "" }) => {
           <a className={styles.symbiosis}>SYMBIOSIS</a>
         </div>
       </div>
-      <div className={styles.btntext}>
+      <button className={styles.btntext}>
         <b className={styles.refer} onClick={openView}>Refer</b>
-      </div>
+      </button>
     </div>
   );
 };
